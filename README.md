@@ -1,9 +1,9 @@
 # Vending_Machine
-AIM:
+## AIM:
 
 To design, implement, and simulate a Vending Machine Controller using Verilog HDL in Xilinx Vivado, which accepts coins, keeps track of balance, and dispenses products automatically based on predefined pricing using a Finite State Machine (FSM).
 
-APPARATUS / TOOLS REQUIRED:
+## APPARATUS / TOOLS REQUIRED:
 
 Computer / Laptop
 
@@ -11,7 +11,7 @@ Vivado (2024.2)
 
 Verilog HDL
 
-PROCEDURE:
+## PROCEDURE:
 
 First, open Vivado software and create a new RTL project without selecting a default part. Create a new Verilog module named vending_machine.v and define the inputs (clk, reset, coin_5, coin_10) and the output (dispense).
 
@@ -23,7 +23,7 @@ The output logic asserts dispense when the current state is s15, indicating that
 
 Finally, create a testbench to simulate different coin combinations, verify the FSM transitions, and observe the dispense signal in Vivado Simulator or GTKWave. Optionally, synthesize the design and generate the bitstream for FPGA implementation.
 
-  VERILOG CODE FOR VENDING MACHINE:
+  ## VERILOG CODE FOR VENDING MACHINE:
   
     `timescale 1ns / 1ps
         module vending_machine(
@@ -91,11 +91,11 @@ Finally, create a testbench to simulate different coin combinations, verify the 
    
       
 
-RTL DIAGRAM:
+## RTL DIAGRAM:
 
 <img width="1366" height="768" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/e4e3f653-f838-4546-8f30-cda101514378" />
 
-  TESTBENCH FOR VENDING MACHINE:
+ ## TESTBENCH FOR VENDING MACHINE:
     
      `timescale 1ns/1ps
       module tb;
@@ -133,10 +133,10 @@ RTL DIAGRAM:
     
         endmodule
 
-OUTPUT WAVEFORM:
+## OUTPUT WAVEFORM:
 
 <img width="1366" height="768" alt="waveform" src="https://github.com/user-attachments/assets/0b2d0809-d8e2-4dd9-8ef5-2d90ad01de48" />
 
-CONCLUSION:<br>
+## CONCLUSION:<br>
 The Vending Machine Controller was successfully designed and implemented using Verilog HDL in Xilinx Vivado. The system uses a Finite State Machine (FSM) to track the total amount of coins inserted and controls the dispensing of the product when the required amount is reached.
 
